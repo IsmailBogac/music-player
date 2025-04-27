@@ -188,7 +188,8 @@ audio.addEventListener('ended',function(){
 range.addEventListener("input", function () {
   audio.currentTime = (range.value / 100) * audio.duration;
 });
-const addPlaying = list.addEventListener("click",function  (e) {
+
+list.addEventListener("click",function  (e) {
   if (e.target.classList.contains("item")) {
     document.querySelectorAll('.item').forEach((item)=>{
       item.classList.remove('playing')
