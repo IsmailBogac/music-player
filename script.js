@@ -84,15 +84,7 @@ MusicPlayer.prototype.playCurrent = function () {
   
 };
 
-// şarkıyı durduran prototype
 
-// MusicPlayer.prototype.pause = function () {
-//   if (this.audio.paused) {
-//     this.audio.play();
-//   } else {
-//     this.audio.pause();
-//   }
-// };
 
 MusicPlayer.prototype.next = function () {
   if (this.currentIndex < this.playList.length - 1) {
